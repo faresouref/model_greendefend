@@ -1,0 +1,48 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+#container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Box styles */
+.box {
+    width: 200px; /* Set width */
+    height: 100px; /* Set height */
+    background-color: #3498db; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Set padding */
+    border: 2px solid #2980b9; /* Set border */
+    margin: 20px; /* Set margin */
+    text-align: center; /* Center text */
+    line-height: 60px; /* Center vertically */
+}
+
+/* Specific styling for box with ID 'box2' */
+#box2 {
+    background-color: #2ecc71; /* Change background color */
+}
+
+/* Apply different styles to the second box */
+#box2 p {
+    font-size: 20px; /* Change font size */
+    font-weight: bold; /* Make text bold */
+    color: #fff; /* Set text color */
+}
+
+/* Apply styles to all paragraphs inside boxes */
+.box p {
+    margin: 0; /* Reset margin */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .box {
+        width: 100%; /* Set width to 100% on small screens */
+    }
+}
