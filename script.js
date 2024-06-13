@@ -3,7 +3,7 @@ let labels = [];
 
 // Load the labels
 // fetch('labels.txt')
-fetch('C:/Users/MEGA TECH/Desktop/css/GReen_Defend-main/model saved/labels.txt')
+fetch('labels.txt')
     .then(response => response.text())
     .then(data => {
         labels = data.split('\n').map(label => label.trim());
@@ -11,7 +11,7 @@ fetch('C:/Users/MEGA TECH/Desktop/css/GReen_Defend-main/model saved/labels.txt')
 
 // Load the TFLite model
 // tflite.loadTFLiteModel('model.tflite').then(loadedModel => {
-tflite.loadTFLiteModel('C:/Users/MEGA TECH/Desktop/css/GReen_Defend-main/model saved/model.tflite').then(loadedModel => {
+tflite.loadTFLiteModel('model.tflite').then(loadedModel => {
     model = loadedModel;
     console.log('Model loaded successfully');
 });
